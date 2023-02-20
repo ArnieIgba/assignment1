@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow: hidden;
+ 
+}
+/* lines of Code for the Background Image */
+.wrapper{
+    padding:300px;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('tee.jpg');  
+    background-size: cover;
+    background-position: center;
+} 
+/* lines of Code for for the static & dynamic txts to be side by side */
+.join{
+  display: flex;
+  padding-top: 150px;
+  
+  
+}
+/* lines of Code for the About Me Section */
+.join2{
+  color:silver;
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
+/* Further styling the header of the About Me Section */
+ .join2 h2 {
+   color: white;
+   font-size: 21px;
+   font-weight: bold;
+   margin-bottom: 10px;
+ }
+/*  styling the paragraph texts  of the About Me Section */
+   .join2 p{
+     color: silver;
+     width: 440px;
+     font-size: 16px;
+    }
+/*  styling the header of the Contact Me Section */
+    .social h3{
+     color: white;
+     padding-top: 20px;
+     margin-bottom: 10px;
+    }
+  /*  styling the footer */     
+   .Bottom h3 {
+     color: silver;
+     margin-bottom: 20px;
+     
+   }
+  /*  styling the static texts */   
+.wrapper .static-txt{
+    color: white;
+    font-size: 50px;
+    font-weight: 300;  
+    
+}
+  /*  styling the dynamic texts */   
+.wrapper .dynamic-txts{
+    line-height: 60px;
+    height: 60px;
+    overflow: hidden; 
+}
+/*  styling the list items of the  dynamic texts & creating Animation */  
+.dynamic-txts li{
+    list-style: none;
+    color: aqua;
+    font-size: 50px;
+    font-weight: 300;
+    top: 0;
+    position: relative;
+    margin-left: 10px;
+    animation: slide 12s steps(5) infinite;  
+}
+/*  Naming the Animation and giving it properties */  
+@keyframes slide {
+    100%{
+       top: -300px;
+    }   
+}
+/*  styling the NavBar */  
+nav{
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    border-bottom: 1px solid aqua;
+    width: 100%;
+    
+}
+/*  styling the logo */  
+.Logo{
+    font-size: 28px;
+    color: silver;
+ }
+ 
+ span{
+    color: aqua;
+ }
+/*  styling the NavBar unordered list items */  
+ nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+ }
+
+ nav ul li a {
+    color: silver;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+ }
+/*  Describing the hover xteristics  */  
+ nav ul li a:hover {
+    color: aqua;
+    transition: .3s;
+ }
+/* Responsive design for smaller screens */  
+@media screen and (max-width: 600px)
+{
+  nav ul li a {
+    color: silver;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+ }
+  .Logo{
+    font-size: 10px;
+    color: silver;
+ }
+  nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .wrapper .static-txt{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: -650px;
+    
+}
+  .wrapper .dynamic-txts{
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden; 
+    margin-bottom: 40px;
+} 
+  .wrapper .my-txt{
+    padding-top: 250px;
+    
+  }
+ 
+}
+
